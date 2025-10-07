@@ -3,22 +3,48 @@ let wordsData = [];
 let currentList = [];
 let currentWordIndex = 0;
 let currentGameMode = null;
+let selectedListIndex = 0;
 let lives = 5;
+
+const headImages = ['img/heads/alien.png', 'img/heads/pirate.png', 'img/heads/pumpkin.png', 'img/heads/stereoglasses.png'];
+const humanImages = ['img/humans/boxer.png', 'img/humans/builder.png', 'img/humans/chef.png', 'img/humans/dancer.png', 'img/humans/doctor.png', 'img/humans/farmer.png', 'img/humans/firefighter.png', 'img/humans/mechanic.png', 'img/humans/nurse.png', 'img/humans/pilot.png', 'img/humans/police.png'];
 
 async function loadWords() {
     try {
         const response = await fetch('words.json');
         const data = await response.json();
-        wordsData = data.lists[0].words; // Using first list (Numbers)
-        currentList = [...wordsData];
-        console.log('Words loaded:', wordsData.length);
+        wordsData = data.lists;
+        populateListSelect();
+        setCurrentList(0); // Default to first list
+        console.log('Words loaded:', wordsData.length, 'lists');
     } catch (error) {
         console.error('Error loading words:', error);
     }
 }
 
+function populateListSelect() {
+    const select = document.getElementById('list-select');
+    select.innerHTML = '';
+    wordsData.forEach((list, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = list.name;
+        select.appendChild(option);
+    });
+    select.addEventListener('change', (e) => setCurrentList(parseInt(e.target.value)));
+}
+
+function setCurrentList(index) {
+    selectedListIndex = index;
+    currentList = [...wordsData[index].words];
+}
+
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+    // Set random initial header image
+    const randomHead = headImages[Math.floor(Math.random() * headImages.length)];
+    document.getElementById('header-avatar').style.backgroundImage = `url(${randomHead})`;
+
     loadWords();
 
     // Register service worker
@@ -43,7 +69,7 @@ function startGame(mode) {
     currentGameMode = mode;
     currentWordIndex = 0;
     lives = 5; // Reset lives
-    currentList = [...wordsData]; // Reset list
+    setCurrentList(selectedListIndex); // Refresh current list
     // Shuffle the list
     for (let i = currentList.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -52,14 +78,27 @@ function startGame(mode) {
     updateProgress();
     updateLivesDisplay();
 
+    // Set random header image
+    const randomHead = headImages[Math.floor(Math.random() * headImages.length)];
+    document.getElementById('header-avatar').style.backgroundImage = `url(${randomHead})`;
+
     // Hide menu, show back button
-    document.querySelector('nav').style.display = 'none';
+    if (window.innerWidth < 600) {
+        document.querySelector('nav').style.display = 'none';
+    } else {
+        document.querySelector('nav').style.visibility = 'hidden';
+    }
     document.getElementById('back-btn').style.display = 'block';
+    document.querySelector('main').style.display = 'block';
+    document.getElementById('game-area').style.display = 'block';
+    document.querySelector('main').style.marginTop = window.innerWidth < 600 ? '0' : '50px';
 
     if (mode === 'scramble') {
         showScrambleGame();
+        document.getElementById('audio-btn').style.display = 'block';
     } else if (mode === 'matching') {
         showMatchingGame();
+        document.getElementById('audio-btn').style.display = 'none';
     }
 }
 
@@ -69,9 +108,14 @@ function updateProgress() {
 }
 
 function playCurrentWordAudio() {
+    const audioBtn = document.getElementById('audio-btn');
+    audioBtn.disabled = true;
     if (currentList[currentWordIndex] && currentList[currentWordIndex].enAudio) {
         const audio = new Audio(currentList[currentWordIndex].enAudio);
         audio.play();
+        audio.onended = () => audioBtn.disabled = false;
+    } else {
+        audioBtn.disabled = false;
     }
 }
 
@@ -119,9 +163,14 @@ function playCorrectSound() {
     audio.play();
 }
 
+let isPlayingLetter = false;
+
 function playLetterAudio(letter) {
+    if (isPlayingLetter) return;
+    isPlayingLetter = true;
     const audio = new Audio(`audio/letters/${letter}.mp3`);
     audio.play();
+    audio.onended = () => isPlayingLetter = false;
 }
 
 function updateLivesDisplay() {
@@ -135,6 +184,7 @@ function updateLivesDisplay() {
 }
 
 function showScrambleGame() {
+    document.getElementById('game-area').classList.add('scramble-mode');
     const gameArea = document.getElementById('game-area');
     const word = currentList[currentWordIndex];
     const scrambled = scrambleWord(word.en);
@@ -231,6 +281,11 @@ function checkScrambleAnswer() {
 function nextWord() {
     currentWordIndex++;
     updateProgress();
+
+    // Change header image for new task
+    const randomHead = headImages[Math.floor(Math.random() * headImages.length)];
+    document.getElementById('header-avatar').style.backgroundImage = `url(${randomHead})`;
+
     if (currentWordIndex < currentList.length) {
         if (currentGameMode === 'scramble') {
             showScrambleGame();
@@ -243,6 +298,7 @@ function nextWord() {
 }
 
 function showCompletion() {
+    document.getElementById('back-btn').style.display = 'none';
     const gameArea = document.getElementById('game-area');
     gameArea.innerHTML = `
         <h2>🎉 Congratulations!</h2>
@@ -252,15 +308,19 @@ function showCompletion() {
 }
 
 function showGameOver() {
+    document.getElementById('back-btn').style.display = 'none';
+    const randomHuman = humanImages[Math.floor(Math.random() * humanImages.length)];
     const gameArea = document.getElementById('game-area');
     gameArea.innerHTML = `
         <h2>💔 Game Over!</h2>
+        <div id="game-over-avatar" style="background-image: url(${randomHuman});"></div>
         <p>You've lost all lives. Try again!</p>
         <button class="menu-btn" onclick="showMenu()">Choose Mode</button>
     `;
 }
 
 function showMatchingGame() {
+    document.getElementById('game-area').classList.add('matching-mode');
     const gameArea = document.getElementById('game-area');
     const pairs = getRandomPairs(5);
     const enItems = pairs.map(p => ({ text: p.en, type: 'en', pairId: p.id }));
@@ -307,7 +367,9 @@ function showMatchingGame() {
             e.stopPropagation();
             const audioSrc = btn.dataset.audio;
             const audio = new Audio(audioSrc);
+            btn.disabled = true;
             audio.play();
+            audio.onended = () => btn.disabled = false;
         });
     });
 }
@@ -321,16 +383,34 @@ let selectedItems = [];
 
 function selectPairItem(item) {
     playClickSound();
+
+    // Reset any incorrect highlights
+    document.querySelectorAll('.pair-item.incorrect').forEach(el => {
+        el.classList.remove('selected', 'incorrect');
+    });
+    selectedItems = selectedItems.filter(i => !i.classList.contains('incorrect'));
+
+    const itemType = item.dataset.type;
+    const selectedType = selectedItems.length > 0 ? selectedItems[0].dataset.type : null;
+
     if (item.classList.contains('selected')) {
+        // Deselect if already selected
         item.classList.remove('selected');
         selectedItems = selectedItems.filter(i => i !== item);
-    } else if (selectedItems.length < 2) {
+    } else if (selectedItems.length === 0) {
+        // Select first item
         item.classList.add('selected');
         selectedItems.push(item);
-
-        if (selectedItems.length === 2) {
-            checkPair();
-        }
+    } else if (selectedItems.length === 1 && itemType === selectedType) {
+        // Replace selection if same language
+        selectedItems[0].classList.remove('selected');
+        selectedItems = [item];
+        item.classList.add('selected');
+    } else if (selectedItems.length === 1 && itemType !== selectedType) {
+        // Check pair if different language
+        item.classList.add('selected');
+        selectedItems.push(item);
+        checkPair();
     }
 }
 
@@ -380,9 +460,15 @@ function checkPair() {
 
 function showMenu() {
     document.querySelector('nav').style.display = 'block';
+    document.querySelector('nav').style.visibility = 'visible';
+    document.querySelector('main').style.display = 'none';
     document.getElementById('game-area').innerHTML = '';
+    document.getElementById('game-area').style.display = 'none';
+    document.getElementById('game-area').classList.remove('matching-mode', 'scramble-mode');
     document.getElementById('back-btn').style.display = 'none';
     document.getElementById('progress-bar').style.width = '0%';
     document.getElementById('lives').innerHTML = '';
+    document.getElementById('audio-btn').style.display = 'none';
+    document.querySelector('main').style.marginTop = '0';
     currentGameMode = null;
 }

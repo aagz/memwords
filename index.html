@@ -12,20 +12,28 @@
     <div class="container">
         <header>
             <button class="back-btn" id="back-btn">← Back</button>
-            <h1>MemWords</h1>
-            <div class="progress">
-                <div class="progress-bar" id="progress-bar"></div>
+            <div class="center-group">
+                <div class="title-group">
+                    <div id="header-avatar"></div>
+                    <h1>MemWords</h1>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
             </div>
             <div class="lives" id="lives"></div>
         </header>
 
         <nav class="menu">
+            <select id="list-select" class="list-select">
+                <!-- Options will be added by JS -->
+            </select>
             <button class="menu-btn" id="scramble-btn">Scramble Words</button>
             <button class="menu-btn" id="matching-btn">Matching Pairs</button>
         </nav>
 
         <main>
-            <div id="game-area">
+            <div id="game-area" style="display: none;">
                 <!-- Game content will be inserted here -->
             </div>
         </main>
@@ -38,4 +46,4 @@
     <script src="app.js"></script>
 </body>
 </html></content>
-<parameter name="filePath">/home/vl/code/mem/index.html
+<parameter name="filePath">/</parameter>

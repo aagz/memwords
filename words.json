@@ -1,6 +1,176 @@
 {
   "lists": [
     {
+      "name": "Numbers 1-10",
+      "words": [
+        {
+          "en": "zero",
+          "ru": "ноль",
+          "enAudio": "audio/words/zero.mp3"
+        },
+        {
+          "en": "one",
+          "ru": "один",
+          "enAudio": "audio/words/one.mp3"
+        },
+        {
+          "en": "two",
+          "ru": "два",
+          "enAudio": "audio/words/two.mp3"
+        },
+        {
+          "en": "three",
+          "ru": "три",
+          "enAudio": "audio/words/three.mp3"
+        },
+        {
+          "en": "four",
+          "ru": "четыре",
+          "enAudio": "audio/words/four.mp3"
+        },
+        {
+          "en": "five",
+          "ru": "пять",
+          "enAudio": "audio/words/five.mp3"
+        },
+        {
+          "en": "six",
+          "ru": "шесть",
+          "enAudio": "audio/words/six.mp3"
+        },
+        {
+          "en": "seven",
+          "ru": "семь",
+          "enAudio": "audio/words/seven.mp3"
+        },
+        {
+          "en": "eight",
+          "ru": "восемь",
+          "enAudio": "audio/words/eight.mp3"
+        },
+        {
+          "en": "nine",
+          "ru": "девять",
+          "enAudio": "audio/words/nine.mp3"
+        },
+        {
+          "en": "ten",
+          "ru": "десять",
+          "enAudio": "audio/words/ten.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Numbers 1-20",
+      "words": [
+        {
+          "en": "zero",
+          "ru": "ноль",
+          "enAudio": "audio/words/zero.mp3"
+        },
+        {
+          "en": "one",
+          "ru": "один",
+          "enAudio": "audio/words/one.mp3"
+        },
+        {
+          "en": "two",
+          "ru": "два",
+          "enAudio": "audio/words/two.mp3"
+        },
+        {
+          "en": "three",
+          "ru": "три",
+          "enAudio": "audio/words/three.mp3"
+        },
+        {
+          "en": "four",
+          "ru": "четыре",
+          "enAudio": "audio/words/four.mp3"
+        },
+        {
+          "en": "five",
+          "ru": "пять",
+          "enAudio": "audio/words/five.mp3"
+        },
+        {
+          "en": "six",
+          "ru": "шесть",
+          "enAudio": "audio/words/six.mp3"
+        },
+        {
+          "en": "seven",
+          "ru": "семь",
+          "enAudio": "audio/words/seven.mp3"
+        },
+        {
+          "en": "eight",
+          "ru": "восемь",
+          "enAudio": "audio/words/eight.mp3"
+        },
+        {
+          "en": "nine",
+          "ru": "девять",
+          "enAudio": "audio/words/nine.mp3"
+        },
+        {
+          "en": "ten",
+          "ru": "десять",
+          "enAudio": "audio/words/ten.mp3"
+        },
+        {
+          "en": "eleven",
+          "ru": "одиннадцать",
+          "enAudio": "audio/words/eleven.mp3"
+        },
+        {
+          "en": "twelve",
+          "ru": "двенадцать",
+          "enAudio": "audio/words/twelve.mp3"
+        },
+        {
+          "en": "thirteen",
+          "ru": "тринадцать",
+          "enAudio": "audio/words/thirteen.mp3"
+        },
+        {
+          "en": "fourteen",
+          "ru": "четырнадцать",
+          "enAudio": "audio/words/fourteen.mp3"
+        },
+        {
+          "en": "fifteen",
+          "ru": "пятнадцать",
+          "enAudio": "audio/words/fifteen.mp3"
+        },
+        {
+          "en": "sixteen",
+          "ru": "шестнадцать",
+          "enAudio": "audio/words/sixteen.mp3"
+        },
+        {
+          "en": "seventeen",
+          "ru": "семнадцать",
+          "enAudio": "audio/words/seventeen.mp3"
+        },
+        {
+          "en": "eighteen",
+          "ru": "восемнадцать",
+          "enAudio": "audio/words/eighteen.mp3"
+        },
+        {
+          "en": "nineteen",
+          "ru": "девятнадцать",
+          "enAudio": "audio/words/nineteen.mp3"
+        },
+        {
+          "en": "twenty",
+          "ru": "двадцать",
+          "enAudio": "audio/words/twenty.mp3"
+        }
+      ]
+    },
+    {
       "name": "Numbers",
       "words": [
         {
