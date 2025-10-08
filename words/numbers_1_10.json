@@ -1,0 +1,60 @@
+{
+  "name": "Numbers 1-10",
+  "words": [
+    {
+      "en": "zero",
+      "ru": "ноль",
+      "enAudio": "audio/words/zero.mp3"
+    },
+    {
+      "en": "one",
+      "ru": "один",
+      "enAudio": "audio/words/one.mp3"
+    },
+    {
+      "en": "two",
+      "ru": "два",
+      "enAudio": "audio/words/two.mp3"
+    },
+    {
+      "en": "three",
+      "ru": "три",
+      "enAudio": "audio/words/three.mp3"
+    },
+    {
+      "en": "four",
+      "ru": "четыре",
+      "enAudio": "audio/words/four.mp3"
+    },
+    {
+      "en": "five",
+      "ru": "пять",
+      "enAudio": "audio/words/five.mp3"
+    },
+    {
+      "en": "six",
+      "ru": "шесть",
+      "enAudio": "audio/words/six.mp3"
+    },
+    {
+      "en": "seven",
+      "ru": "семь",
+      "enAudio": "audio/words/seven.mp3"
+    },
+    {
+      "en": "eight",
+      "ru": "восемь",
+      "enAudio": "audio/words/eight.mp3"
+    },
+    {
+      "en": "nine",
+      "ru": "девять",
+      "enAudio": "audio/words/nine.mp3"
+    },
+    {
+      "en": "ten",
+      "ru": "десять",
+      "enAudio": "audio/words/ten.mp3"
+    }
+  ]
+}

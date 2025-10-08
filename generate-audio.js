@@ -5,15 +5,16 @@ const path = require('path');
 // npm install node-fetch
 
 async function generateAudio() {
-    const data = JSON.parse(fs.readFileSync('words.json', 'utf8'));
     const audioDir = path.join(__dirname, 'audio');
 
     if (!fs.existsSync(audioDir)) {
         fs.mkdirSync(audioDir);
     }
 
-    for (const list of data.lists) {
-        for (const word of list.words) {
+    const files = fs.readdirSync('words').filter(f => f.endsWith('.json'));
+    for (const file of files) {
+        const data = JSON.parse(fs.readFileSync('words/' + file, 'utf8'));
+        for (const word of data.words) {
             // English
             if (word.en) {
                 const enFile = `audio/words/${word.en.replace(/[^a-zA-Z0-9]/g, '_')}.mp3`;
@@ -28,9 +29,8 @@ async function generateAudio() {
                 delete word.ruAudio;
             }
         }
+        fs.writeFileSync('words/' + file, JSON.stringify(data, null, 2));
     }
-
-    fs.writeFileSync('words.json', JSON.stringify(data, null, 2));
 
     // Generate audio for letters
     const lettersDir = path.join(audioDir, 'letters');

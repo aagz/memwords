@@ -33,7 +33,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -87,6 +87,7 @@ h2 {
     height: 10px;
     background-color: #e0e0e0;
     border-radius: 5px;
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -178,6 +179,34 @@ main {
 
 #game-area.matching-mode {
     margin-bottom: 50px;
+}
+
+.choice-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.choice-btn {
+    background-color: white;
+    color: var(--duo-green);
+    border: 2px solid var(--duo-green);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.choice-btn:hover {
+    /* background-color: var(--duo-green); */
+    color: var(--duo-green);
+}
+
+.choice-btn.correct,
+.choice-btn.incorrect {
+    color: white;
 }
 
 footer {
@@ -312,12 +341,18 @@ footer {
 
 .pair-item {
     background-color: white;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px var(--shadow);
     border: 2px solid var(--duo-green);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .pair-item:hover {
@@ -477,8 +512,18 @@ footer {
 }
 
 #game-over-avatar {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%; /* optional */
+    margin: 20px auto;
+}
+
+#victory-avatar {
+    width: 160px;
+    height: 160px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -492,7 +537,7 @@ footer {
         display: none;
     }
     .container {
-        padding: 10px;
+        padding: 5px 10px 20px 10px;
     }
     main {
         margin-top: 20px !important;
@@ -500,4 +545,19 @@ footer {
     #game-area {
         padding: 20px;
     }
+    .nav-game-mobile {
+        display: none;
+    }
+    .choice-btn:hover {
+        background-color: white;
+    }
+}
+
+.nav-menu {
+    visibility: visible;
+    /* display: block; */
+}
+
+.nav-game-desktop {
+    visibility: hidden;
 }

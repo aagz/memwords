@@ -171,7 +171,7 @@
       ]
     },
     {
-      "name": "Numbers",
+      "name": "Числа 1-100",
       "words": [
         {
           "en": "zero",
@@ -362,6 +362,516 @@
           "en": "purple",
           "ru": "фиолетовый",
           "enAudio": "audio/words/purple.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Числа 0-100",
+      "words": [
+        {
+          "en": "zero",
+          "ru": "ноль",
+          "enAudio": "audio/words/zero.mp3"
+        },
+        {
+          "en": "one",
+          "ru": "один",
+          "enAudio": "audio/words/one.mp3"
+        },
+        {
+          "en": "two",
+          "ru": "два",
+          "enAudio": "audio/words/two.mp3"
+        },
+        {
+          "en": "three",
+          "ru": "три",
+          "enAudio": "audio/words/three.mp3"
+        },
+        {
+          "en": "four",
+          "ru": "четыре",
+          "enAudio": "audio/words/four.mp3"
+        },
+        {
+          "en": "five",
+          "ru": "пять",
+          "enAudio": "audio/words/five.mp3"
+        },
+        {
+          "en": "six",
+          "ru": "шесть",
+          "enAudio": "audio/words/six.mp3"
+        },
+        {
+          "en": "seven",
+          "ru": "семь",
+          "enAudio": "audio/words/seven.mp3"
+        },
+        {
+          "en": "eight",
+          "ru": "восемь",
+          "enAudio": "audio/words/eight.mp3"
+        },
+        {
+          "en": "nine",
+          "ru": "девять",
+          "enAudio": "audio/words/nine.mp3"
+        },
+        {
+          "en": "ten",
+          "ru": "десять",
+          "enAudio": "audio/words/ten.mp3"
+        },
+        {
+          "en": "eleven",
+          "ru": "одиннадцать",
+          "enAudio": "audio/words/eleven.mp3"
+        },
+        {
+          "en": "twelve",
+          "ru": "двенадцать",
+          "enAudio": "audio/words/twelve.mp3"
+        },
+        {
+          "en": "thirteen",
+          "ru": "тринадцать",
+          "enAudio": "audio/words/thirteen.mp3"
+        },
+        {
+          "en": "fourteen",
+          "ru": "четырнадцать",
+          "enAudio": "audio/words/fourteen.mp3"
+        },
+        {
+          "en": "fifteen",
+          "ru": "пятнадцать",
+          "enAudio": "audio/words/fifteen.mp3"
+        },
+        {
+          "en": "sixteen",
+          "ru": "шестнадцать",
+          "enAudio": "audio/words/sixteen.mp3"
+        },
+        {
+          "en": "seventeen",
+          "ru": "семнадцать",
+          "enAudio": "audio/words/seventeen.mp3"
+        },
+        {
+          "en": "eighteen",
+          "ru": "восемнадцать",
+          "enAudio": "audio/words/eighteen.mp3"
+        },
+        {
+          "en": "nineteen",
+          "ru": "девятнадцать",
+          "enAudio": "audio/words/nineteen.mp3"
+        },
+        {
+          "en": "twenty",
+          "ru": "двадцать",
+          "enAudio": "audio/words/twenty.mp3"
+        },
+        {
+          "en": "twenty-one",
+          "ru": "двадцать один",
+          "enAudio": "audio/words/twenty_one.mp3"
+        },
+        {
+          "en": "twenty-two",
+          "ru": "двадцать два",
+          "enAudio": "audio/words/twenty_two.mp3"
+        },
+        {
+          "en": "twenty-three",
+          "ru": "двадцать три",
+          "enAudio": "audio/words/twenty_three.mp3"
+        },
+        {
+          "en": "twenty-four",
+          "ru": "двадцать четыре",
+          "enAudio": "audio/words/twenty_four.mp3"
+        },
+        {
+          "en": "twenty-five",
+          "ru": "двадцать пять",
+          "enAudio": "audio/words/twenty_five.mp3"
+        },
+        {
+          "en": "twenty-six",
+          "ru": "двадцать шесть",
+          "enAudio": "audio/words/twenty_six.mp3"
+        },
+        {
+          "en": "twenty-seven",
+          "ru": "двадцать семь",
+          "enAudio": "audio/words/twenty_seven.mp3"
+        },
+        {
+          "en": "twenty-eight",
+          "ru": "двадцать восемь",
+          "enAudio": "audio/words/twenty_eight.mp3"
+        },
+        {
+          "en": "twenty-nine",
+          "ru": "двадцать девять",
+          "enAudio": "audio/words/twenty_nine.mp3"
+        },
+        {
+          "en": "thirty",
+          "ru": "тридцать",
+          "enAudio": "audio/words/thirty.mp3"
+        },
+        {
+          "en": "thirty-one",
+          "ru": "тридцать один",
+          "enAudio": "audio/words/thirty_one.mp3"
+        },
+        {
+          "en": "thirty-two",
+          "ru": "тридцать два",
+          "enAudio": "audio/words/thirty_two.mp3"
+        },
+        {
+          "en": "thirty-three",
+          "ru": "тридцать три",
+          "enAudio": "audio/words/thirty_three.mp3"
+        },
+        {
+          "en": "thirty-four",
+          "ru": "тридцать четыре",
+          "enAudio": "audio/words/thirty_four.mp3"
+        },
+        {
+          "en": "thirty-five",
+          "ru": "тридцать пять",
+          "enAudio": "audio/words/thirty_five.mp3"
+        },
+        {
+          "en": "thirty-six",
+          "ru": "тридцать шесть",
+          "enAudio": "audio/words/thirty_six.mp3"
+        },
+        {
+          "en": "thirty-seven",
+          "ru": "тридцать семь",
+          "enAudio": "audio/words/thirty_seven.mp3"
+        },
+        {
+          "en": "thirty-eight",
+          "ru": "тридцать восемь",
+          "enAudio": "audio/words/thirty_eight.mp3"
+        },
+        {
+          "en": "thirty-nine",
+          "ru": "тридцать девять",
+          "enAudio": "audio/words/thirty_nine.mp3"
+        },
+        {
+          "en": "forty",
+          "ru": "сорок",
+          "enAudio": "audio/words/forty.mp3"
+        },
+        {
+          "en": "forty-one",
+          "ru": "сорок один",
+          "enAudio": "audio/words/forty_one.mp3"
+        },
+        {
+          "en": "forty-two",
+          "ru": "сорок два",
+          "enAudio": "audio/words/forty_two.mp3"
+        },
+        {
+          "en": "forty-three",
+          "ru": "сорок три",
+          "enAudio": "audio/words/forty_three.mp3"
+        },
+        {
+          "en": "forty-four",
+          "ru": "сорок четыре",
+          "enAudio": "audio/words/forty_four.mp3"
+        },
+        {
+          "en": "forty-five",
+          "ru": "сорок пять",
+          "enAudio": "audio/words/forty_five.mp3"
+        },
+        {
+          "en": "forty-six",
+          "ru": "сорок шесть",
+          "enAudio": "audio/words/forty_six.mp3"
+        },
+        {
+          "en": "forty-seven",
+          "ru": "сорок семь",
+          "enAudio": "audio/words/forty_seven.mp3"
+        },
+        {
+          "en": "forty-eight",
+          "ru": "сорок восемь",
+          "enAudio": "audio/words/forty_eight.mp3"
+        },
+        {
+          "en": "forty-nine",
+          "ru": "сорок девять",
+          "enAudio": "audio/words/forty_nine.mp3"
+        },
+        {
+          "en": "fifty",
+          "ru": "пятьдесят",
+          "enAudio": "audio/words/fifty.mp3"
+        },
+        {
+          "en": "fifty-one",
+          "ru": "пятьдесят один",
+          "enAudio": "audio/words/fifty_one.mp3"
+        },
+        {
+          "en": "fifty-two",
+          "ru": "пятьдесят два",
+          "enAudio": "audio/words/fifty_two.mp3"
+        },
+        {
+          "en": "fifty-three",
+          "ru": "пятьдесят три",
+          "enAudio": "audio/words/fifty_three.mp3"
+        },
+        {
+          "en": "fifty-four",
+          "ru": "пятьдесят четыре",
+          "enAudio": "audio/words/fifty_four.mp3"
+        },
+        {
+          "en": "fifty-five",
+          "ru": "пятьдесят пять",
+          "enAudio": "audio/words/fifty_five.mp3"
+        },
+        {
+          "en": "fifty-six",
+          "ru": "пятьдесят шесть",
+          "enAudio": "audio/words/fifty_six.mp3"
+        },
+        {
+          "en": "fifty-seven",
+          "ru": "пятьдесят семь",
+          "enAudio": "audio/words/fifty_seven.mp3"
+        },
+        {
+          "en": "fifty-eight",
+          "ru": "пятьдесят восемь",
+          "enAudio": "audio/words/fifty_eight.mp3"
+        },
+        {
+          "en": "fifty-nine",
+          "ru": "пятьдесят девять",
+          "enAudio": "audio/words/fifty_nine.mp3"
+        },
+        {
+          "en": "sixty",
+          "ru": "шестьдесят",
+          "enAudio": "audio/words/sixty.mp3"
+        },
+        {
+          "en": "sixty-one",
+          "ru": "шестьдесят один",
+          "enAudio": "audio/words/sixty_one.mp3"
+        },
+        {
+          "en": "sixty-two",
+          "ru": "шестьдесят два",
+          "enAudio": "audio/words/sixty_two.mp3"
+        },
+        {
+          "en": "sixty-three",
+          "ru": "шестьдесят три",
+          "enAudio": "audio/words/sixty_three.mp3"
+        },
+        {
+          "en": "sixty-four",
+          "ru": "шестьдесят четыре",
+          "enAudio": "audio/words/sixty_four.mp3"
+        },
+        {
+          "en": "sixty-five",
+          "ru": "шестьдесят пять",
+          "enAudio": "audio/words/sixty_five.mp3"
+        },
+        {
+          "en": "sixty-six",
+          "ru": "шестьдесят шесть",
+          "enAudio": "audio/words/sixty_six.mp3"
+        },
+        {
+          "en": "sixty-seven",
+          "ru": "шестьдесят семь",
+          "enAudio": "audio/words/sixty_seven.mp3"
+        },
+        {
+          "en": "sixty-eight",
+          "ru": "шестьдесят восемь",
+          "enAudio": "audio/words/sixty_eight.mp3"
+        },
+        {
+          "en": "sixty-nine",
+          "ru": "шестьдесят девять",
+          "enAudio": "audio/words/sixty_nine.mp3"
+        },
+        {
+          "en": "seventy",
+          "ru": "семьдесят",
+          "enAudio": "audio/words/seventy.mp3"
+        },
+        {
+          "en": "seventy-one",
+          "ru": "семьдесят один",
+          "enAudio": "audio/words/seventy_one.mp3"
+        },
+        {
+          "en": "seventy-two",
+          "ru": "семьдесят два",
+          "enAudio": "audio/words/seventy_two.mp3"
+        },
+        {
+          "en": "seventy-three",
+          "ru": "семьдесят три",
+          "enAudio": "audio/words/seventy_three.mp3"
+        },
+        {
+          "en": "seventy-four",
+          "ru": "семьдесят четыре",
+          "enAudio": "audio/words/seventy_four.mp3"
+        },
+        {
+          "en": "seventy-five",
+          "ru": "семьдесят пять",
+          "enAudio": "audio/words/seventy_five.mp3"
+        },
+        {
+          "en": "seventy-six",
+          "ru": "семьдесят шесть",
+          "enAudio": "audio/words/seventy_six.mp3"
+        },
+        {
+          "en": "seventy-seven",
+          "ru": "семьдесят семь",
+          "enAudio": "audio/words/seventy_seven.mp3"
+        },
+        {
+          "en": "seventy-eight",
+          "ru": "семьдесят восемь",
+          "enAudio": "audio/words/seventy_eight.mp3"
+        },
+        {
+          "en": "seventy-nine",
+          "ru": "семьдесят девять",
+          "enAudio": "audio/words/seventy_nine.mp3"
+        },
+        {
+          "en": "eighty",
+          "ru": "восемьдесят",
+          "enAudio": "audio/words/eighty.mp3"
+        },
+        {
+          "en": "eighty-one",
+          "ru": "восемьдесят один",
+          "enAudio": "audio/words/eighty_one.mp3"
+        },
+        {
+          "en": "eighty-two",
+          "ru": "восемьдесят два",
+          "enAudio": "audio/words/eighty_two.mp3"
+        },
+        {
+          "en": "eighty-three",
+          "ru": "восемьдесят три",
+          "enAudio": "audio/words/eighty_three.mp3"
+        },
+        {
+          "en": "eighty-four",
+          "ru": "восемьдесят четыре",
+          "enAudio": "audio/words/eighty_four.mp3"
+        },
+        {
+          "en": "eighty-five",
+          "ru": "восемьдесят пять",
+          "enAudio": "audio/words/eighty_five.mp3"
+        },
+        {
+          "en": "eighty-six",
+          "ru": "восемьдесят шесть",
+          "enAudio": "audio/words/eighty_six.mp3"
+        },
+        {
+          "en": "eighty-seven",
+          "ru": "восемьдесят семь",
+          "enAudio": "audio/words/eighty_seven.mp3"
+        },
+        {
+          "en": "eighty-eight",
+          "ru": "восемьдесят восемь",
+          "enAudio": "audio/words/eighty_eight.mp3"
+        },
+        {
+          "en": "eighty-nine",
+          "ru": "восемьдесят девять",
+          "enAudio": "audio/words/eighty_nine.mp3"
+        },
+        {
+          "en": "ninety",
+          "ru": "девяносто",
+          "enAudio": "audio/words/ninety.mp3"
+        },
+        {
+          "en": "ninety-one",
+          "ru": "девяносто один",
+          "enAudio": "audio/words/ninety_one.mp3"
+        },
+        {
+          "en": "ninety-two",
+          "ru": "девяносто два",
+          "enAudio": "audio/words/ninety_two.mp3"
+        },
+        {
+          "en": "ninety-three",
+          "ru": "девяносто три",
+          "enAudio": "audio/words/ninety_three.mp3"
+        },
+        {
+          "en": "ninety-four",
+          "ru": "девяносто четыре",
+          "enAudio": "audio/words/ninety_four.mp3"
+        },
+        {
+          "en": "ninety-five",
+          "ru": "девяносто пять",
+          "enAudio": "audio/words/ninety_five.mp3"
+        },
+        {
+          "en": "ninety-six",
+          "ru": "девяносто шесть",
+          "enAudio": "audio/words/ninety_six.mp3"
+        },
+        {
+          "en": "ninety-seven",
+          "ru": "девяносто семь",
+          "enAudio": "audio/words/ninety_seven.mp3"
+        },
+        {
+          "en": "ninety-eight",
+          "ru": "девяносто восемь",
+          "enAudio": "audio/words/ninety_eight.mp3"
+        },
+        {
+          "en": "ninety-nine",
+          "ru": "девяносто девять",
+          "enAudio": "audio/words/ninety_nine.mp3"
+        },
+        {
+          "en": "one hundred",
+          "ru": "сто",
+          "enAudio": "audio/words/one_hundred.mp3"
         }
       ]
     }

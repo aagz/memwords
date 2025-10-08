@@ -1,0 +1,45 @@
+{
+  "name": "Colors",
+  "words": [
+    {
+      "en": "red",
+      "ru": "красный",
+      "enAudio": "audio/words/red.mp3"
+    },
+    {
+      "en": "blue",
+      "ru": "синий",
+      "enAudio": "audio/words/blue.mp3"
+    },
+    {
+      "en": "green",
+      "ru": "зелёный",
+      "enAudio": "audio/words/green.mp3"
+    },
+    {
+      "en": "yellow",
+      "ru": "жёлтый",
+      "enAudio": "audio/words/yellow.mp3"
+    },
+    {
+      "en": "black",
+      "ru": "чёрный",
+      "enAudio": "audio/words/black.mp3"
+    },
+    {
+      "en": "white",
+      "ru": "белый",
+      "enAudio": "audio/words/white.mp3"
+    },
+    {
+      "en": "orange",
+      "ru": "оранжевый",
+      "enAudio": "audio/words/orange.mp3"
+    },
+    {
+      "en": "purple",
+      "ru": "фиолетовый",
+      "enAudio": "audio/words/purple.mp3"
+    }
+  ]
+}
