@@ -98,7 +98,7 @@ function updateLivesDisplay(livesCount = lives) {
   livesContainer.innerHTML = '';
   for (let i = 0; i < 5; i++) {
     const img = document.createElement('img');
-    img.src = i < livesCount ? 'img/heart_full.png' : 'img/heart_empty.png';
+    img.src = i < (5 - livesCount) ? 'img/heart_empty.png' : 'img/heart_full.png';
     livesContainer.appendChild(img);
   }
 }

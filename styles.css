@@ -226,7 +226,12 @@ h2 {
     box-shadow: 0 4px 8px var(--shadow);
     font-family: 'Balsamiq Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: bolder;
-    margin: 0 10px;
+    margin: 0;
+    width: 150px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .list-select {
@@ -249,6 +254,13 @@ h2 {
 
 .menu-btn:active {
     transform: translateY(0);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 main {

@@ -100,20 +100,26 @@ function showCompletion(message, buttonText, buttonAction) {
     <h2>🎉 Победа!</h2>
     <div id="victory-avatar" style="background-image: url(${randomHuman});"></div>
     <p id="victory-message">${message}</p>
-    ${buttonsHtml}
+    <div class="buttons-container">${buttonsHtml}</div>
   `;
   playWinSound();
 }
 
 function showGameOver(message, buttonText, buttonAction) {
   document.getElementById('back-btn').style.display = 'block';
-  const randomHuman = humanImages[Math.floor(Math.random() * humanImages.length)];
   const gameArea = document.getElementById('game-area');
+  let buttonsHtml = '';
+  if (Array.isArray(buttonText)) {
+    for (let i = 0; i < buttonText.length; i++) {
+      buttonsHtml += `<button class="menu-btn" onclick="${buttonAction[i]}">${buttonText[i]}</button>`;
+    }
+  } else {
+    buttonsHtml = `<button class="menu-btn" onclick="${buttonAction}">${buttonText}</button>`;
+  }
   gameArea.innerHTML = `
     <h2>💔 Игра окончена!</h2>
-    <div id="game-over-avatar" style="background-image: url(${randomHuman});"></div>
     <p id="game-over-message">${message}</p>
-    <button class="menu-btn" onclick="${buttonAction}">${buttonText}</button>
+    <div class="buttons-container">${buttonsHtml}</div>
   `;
   playGameOverSound();
 }
