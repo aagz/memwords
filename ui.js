@@ -54,10 +54,10 @@ function showMathModeSelection() {
 
 function startMathMode(mode) {
   currentMathMode = mode;
-  mathLives = 5;
+  lives = 5;
   currentMathIndex = 0;
   mathScore = 0;
-  updateLivesDisplay(mathLives);
+  updateLivesDisplay(lives);
   document.getElementById('math-mode-selection').style.display = 'none';
   generateMathTasks(mode);
   showMathTask();

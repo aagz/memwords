@@ -6,7 +6,6 @@ let mathTasks = [];
 let currentMathIndex = 0;
 let mathScore = 0;
 let currentMathMode = null;
-let mathLives = 5;
 
 
 
@@ -114,13 +113,13 @@ function checkMathAnswer(selected, correct) {
   } else {
     clickedBtn.classList.add('incorrect');
     playFailSound();
-    mathLives--;
-    updateLivesDisplay(mathLives);
+    lives--;
+    updateLivesDisplay(lives);
     // Show correct answer
     const correctBtn = Array.from(buttons).find(btn => btn.textContent == correct);
     correctBtn.classList.add('correct');
     setTimeout(() => {
-      if (mathLives <= 0) {
+      if (lives <= 0) {
         showGameOver("Все сердечки закончились, попробуй еще раз!", ["Попробовать снова", "Выбрать режим"], [`resetMath('${currentMathMode}')`, "showMathMenu()"]);
       } else {
         currentMathIndex++;

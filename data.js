@@ -12,7 +12,7 @@ let currentWordIndex = 0;
 let currentGameMode = null;
 let selectedListIndex = 0;
 let lives = 5;
-const TOTAL_TASKS = 5;
+const TOTAL_TASKS = 15;
 
 // ====================
 // Data Loading
