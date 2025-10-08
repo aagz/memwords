@@ -95,6 +95,91 @@
       "en": "daddy",
       "ru": "папа",
       "enAudio": "audio/words/daddy.mp3"
+    },
+    {
+      "en": "gun",
+      "ru": "оружие",
+      "enAudio": "audio/words/gun.mp3"
+    },
+    {
+      "en": "in",
+      "ru": "в",
+      "enAudio": "audio/words/in.mp3"
+    },
+    {
+      "en": "key",
+      "ru": "ключ",
+      "enAudio": "audio/words/key.mp3"
+    },
+    {
+      "en": "frog",
+      "ru": "лягушка",
+      "enAudio": "audio/words/frog.mp3"
+    },
+    {
+      "en": "hen",
+      "ru": "курица",
+      "enAudio": "audio/words/hen.mp3"
+    },
+    {
+      "en": "jam",
+      "ru": "варенье",
+      "enAudio": "audio/words/jam.mp3"
+    },
+    {
+      "en": "glass",
+      "ru": "стекло",
+      "enAudio": "audio/words/glass.mp3"
+    },
+    {
+      "en": "ant",
+      "ru": "муравей",
+      "enAudio": "audio/words/ant.mp3"
+    },
+    {
+      "en": "snake",
+      "ru": "змея",
+      "enAudio": "audio/words/snake.mp3"
+    },
+    {
+      "en": "rabbit",
+      "ru": "кролик",
+      "enAudio": "audio/words/rabbit.mp3"
+    },
+    {
+      "en": "tree",
+      "ru": "дерево",
+      "enAudio": "audio/words/tree.mp3"
+    },
+    {
+      "en": "umbrella",
+      "ru": "зонт",
+      "enAudio": "audio/words/umbrella.mp3"
+    },
+    {
+      "en": "vest",
+      "ru": "жилет",
+      "enAudio": "audio/words/vest.mp3"
+    },
+    {
+      "en": "window",
+      "ru": "окно",
+      "enAudio": "audio/words/window.mp3"
+    },
+    {
+      "en": "box",
+      "ru": "коробка",
+      "enAudio": "audio/words/box.mp3"
+    },
+    {
+      "en": "yacht",
+      "ru": "яхта",
+      "enAudio": "audio/words/yacht.mp3"
+    },
+    {
+      "en": "zip",
+      "ru": "молния",
+      "enAudio": "audio/words/zip.mp3"
     }
   ]
 }

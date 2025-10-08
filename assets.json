@@ -1,0 +1,35 @@
+{
+  "headImages": [
+    "img/heads/alien.png",
+    "img/heads/dartvader.png",
+    "img/heads/light_smile.png",
+    "img/heads/pirate.png",
+    "img/heads/pumpkin.png",
+    "img/heads/skull.png",
+    "img/heads/smile.png",
+    "img/heads/stereoglasses.png"
+  ],
+  "humanImages": [
+    "img/humans/astronaut.png",
+    "img/humans/boxer.png",
+    "img/humans/dino.png",
+    "img/humans/emmet.png",
+    "img/humans/hulk.png",
+    "img/humans/jester.png",
+    "img/humans/lory.png",
+    "img/humans/ninja.png",
+    "img/humans/ninja_black.png",
+    "img/humans/ninja_orange.png",
+    "img/humans/spiderman.png",
+    "img/humans/suit.png",
+    "img/humans/superman.png",
+    "img/humans/wolverine.png"
+  ],
+  "wordLists": [
+    "words/colors.json",
+    "words/numbers_1_10.json",
+    "words/numbers_1_100.json",
+    "words/numbers_1_20.json",
+    "words/school.json"
+  ]
+}

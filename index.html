@@ -25,7 +25,12 @@
             <div class="lives" id="lives"></div>
         </header>
 
-        <nav class="menu">
+        <div class="subject-selection" id="subject-selection">
+            <button class="subject-btn" id="english-btn">Английский</button>
+            <button class="subject-btn" id="math-btn">Математика</button>
+        </div>
+
+        <nav class="menu" id="menu-nav" style="display: none;">
             <select id="list-select" class="list-select">
                 <!-- Options will be added by JS -->
             </select>
@@ -34,6 +39,11 @@
 
         <main>
             <div id="game-area" style="display: none;">
+                <div id="math-mode-selection" style="display: none;">
+                    <h2>Выберите режим:</h2>
+                    <button class="mode-btn" id="add-sub-btn">Сложение и вычитание</button>
+                    <button class="mode-btn" id="mult-btn">Таблица умножения</button>
+                </div>
                 <!-- Game content will be inserted here -->
             </div>
         </main>
@@ -43,6 +53,15 @@
         </footer>
     </div>
 
+    <script src="data.js"></script>
+    <script src="ui.js"></script>
+    <script src="game.js"></script>
+    <script src="utils.js"></script>
+    <script src="data.js"></script>
+    <script src="game.js"></script>
+    <script src="ui.js"></script>
+    <script src="utils.js"></script>
+    <script src="math.js"></script>
     <script src="app.js"></script>
 </body>
 </html></content>
