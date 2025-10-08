@@ -653,7 +653,7 @@ footer {
 
 .nav-menu {
     visibility: visible;
-    /* display: block; */
+    display: block;
 }
 
 .nav-game-desktop {

@@ -25,10 +25,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Menu buttons
   document.getElementById('play-btn').addEventListener('click', () => startGame());
 
-  // Math mode buttons
-  document.getElementById('add-sub-btn').addEventListener('click', () => startMathMode('add-sub'));
-  document.getElementById('mult-btn').addEventListener('click', () => startMathMode('mult'));
-
   // Back button
   document.getElementById('back-btn').addEventListener('click', () => {
     if (currentSubject === 'english' && document.getElementById('menu-nav').style.display !== 'none') {

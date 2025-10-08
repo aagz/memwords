@@ -38,6 +38,7 @@ function startGame() {
     nav.classList.add('nav-game-desktop');
   }
   document.getElementById('back-btn').style.display = 'block';
+  document.getElementById('menu-nav').style.display = 'none';
   document.querySelector('main').style.display = 'block';
   document.getElementById('game-area').style.display = 'block';
   document.querySelector('main').style.marginTop = '50px';
@@ -70,7 +71,7 @@ function nextWord() {
   if (currentWordIndex < currentList.length) {
     showRandomGame();
   } else {
-    showCompletion("Ты выполнил все задания!", ["Попробовать снова", "Выйти"], [`startGame()`, "showMenu()"]);
+    showCompletion("Ты выполнил все задания!", ["Попробовать снова", "Выбрать список"], [`startGame()`, "showMenu()"]);
   }
 }
 
