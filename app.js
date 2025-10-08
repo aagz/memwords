@@ -40,7 +40,7 @@ const humanImages = [
 
 async function loadWords() {
   try {
-    const files = ['numbers_1_10.json', 'numbers_1_20.json', 'numbers_1_100.json', 'colors.json'];
+    const files = ['numbers_1_10.json', 'numbers_1_20.json', 'numbers_1_100.json', 'colors.json', 'school.json'];
     const responses = await Promise.all(files.map(file => fetch('words/' + file)));
     wordsData = await Promise.all(responses.map(r => r.json()));
     populateListSelect();

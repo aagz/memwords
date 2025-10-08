@@ -1,5 +1,5 @@
 {
-  "name": "Colors",
+  "name": "Цвета",
   "words": [
     {
       "en": "red",
@@ -40,6 +40,21 @@
       "en": "purple",
       "ru": "фиолетовый",
       "enAudio": "audio/words/purple.mp3"
+    },
+    {
+      "en": "pink",
+      "ru": "розовый",
+      "enAudio": "audio/words/pink.mp3"
+    },
+    {
+      "en": "gray",
+      "ru": "серый",
+      "enAudio": "audio/words/gray.mp3"
+    },
+    {
+      "en": "brown",
+      "ru": "коричневый",
+      "enAudio": "audio/words/brown.mp3"
     }
   ]
 }

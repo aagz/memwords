@@ -1,0 +1,100 @@
+{
+  "name": "Школьные",
+  "words": [
+    {
+      "en": "jug",
+      "ru": "кувшин",
+      "enAudio": "audio/words/jug.mp3"
+    },
+    {
+      "en": "ink",
+      "ru": "чернила",
+      "enAudio": "audio/words/ink.mp3"
+    },
+    {
+      "en": "bed",
+      "ru": "кровать",
+      "enAudio": "audio/words/bed.mp3"
+    },
+    {
+      "en": "kangaroo",
+      "ru": "кенгуру",
+      "enAudio": "audio/words/kangaroo.mp3"
+    },
+    {
+      "en": "mouse",
+      "ru": "мышь",
+      "enAudio": "audio/words/mouse.mp3"
+    },
+    {
+      "en": "apple",
+      "ru": "яблоко",
+      "enAudio": "audio/words/apple.mp3"
+    },
+    {
+      "en": "egg",
+      "ru": "яйцо",
+      "enAudio": "audio/words/egg.mp3"
+    },
+    {
+      "en": "flag",
+      "ru": "флаг",
+      "enAudio": "audio/words/flag.mp3"
+    },
+    {
+      "en": "horse",
+      "ru": "лошадь",
+      "enAudio": "audio/words/horse.mp3"
+    },
+    {
+      "en": "lamp",
+      "ru": "лампа",
+      "enAudio": "audio/words/lamp.mp3"
+    },
+    {
+      "en": "orange",
+      "ru": "апельсин",
+      "enAudio": "audio/words/orange.mp3"
+    },
+    {
+      "en": "zebra",
+      "ru": "зебра",
+      "enAudio": "audio/words/zebra.mp3"
+    },
+    {
+      "en": "nest",
+      "ru": "гнездо",
+      "enAudio": "audio/words/nest.mp3"
+    },
+    {
+      "en": "log",
+      "ru": "бревно",
+      "enAudio": "audio/words/log.mp3"
+    },
+    {
+      "en": "pin",
+      "ru": "булавка",
+      "enAudio": "audio/words/pin.mp3"
+    },
+    {
+      "en": "queen",
+      "ru": "королева",
+      "enAudio": "audio/words/queen.mp3"
+    },
+    {
+      "en": "elf",
+      "ru": "эльф",
+      "enAudio": "audio/words/elf.mp3"
+    },
+    {
+      "en": "mummy",
+      "ru": "мама",
+      "enAudio": "audio/words/mummy.mp3"
+    },
+    {
+      "en": "daddy",
+      "ru": "папа",
+      "enAudio": "audio/words/daddy.mp3"
+    }
+  ]
+}
