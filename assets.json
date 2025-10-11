@@ -30,6 +30,7 @@
     "words/numbers_1_10.json",
     "words/numbers_1_100.json",
     "words/numbers_1_20.json",
-    "words/school.json"
+    "words/school.json",
+    "words/weekdays.json"
   ]
 }

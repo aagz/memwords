@@ -1,0 +1,40 @@
+{
+  "name": "Дни недели",
+  "words": [
+    {
+      "en": "monday",
+      "ru": "понедельник",
+      "enAudio": "audio/words/monday.mp3"
+    },
+    {
+      "en": "tuesday",
+      "ru": "вторник",
+      "enAudio": "audio/words/tuesday.mp3"
+    },
+    {
+      "en": "wednesday",
+      "ru": "среда",
+      "enAudio": "audio/words/wednesday.mp3"
+    },
+    {
+      "en": "thursday",
+      "ru": "четверг",
+      "enAudio": "audio/words/thursday.mp3"
+    },
+    {
+      "en": "friday",
+      "ru": "пятница",
+      "enAudio": "audio/words/friday.mp3"
+    },
+    {
+      "en": "saturday",
+      "ru": "суббота",
+      "enAudio": "audio/words/saturday.mp3"
+    },
+    {
+      "en": "sunday",
+      "ru": "воскресенье",
+      "enAudio": "audio/words/sunday.mp3"
+    }
+  ]
+}
