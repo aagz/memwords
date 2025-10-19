@@ -1,0 +1,95 @@
+{
+  "name": "Местоимения",
+  "words": [
+    {
+      "en": "I",
+      "ru": "я",
+      "enAudio": "audio/words/I.mp3"
+    },
+    {
+      "en": "you",
+      "ru": "ты/вы",
+      "enAudio": "audio/words/you.mp3"
+    },
+    {
+      "en": "he",
+      "ru": "он",
+      "enAudio": "audio/words/he.mp3"
+    },
+    {
+      "en": "she",
+      "ru": "она",
+      "enAudio": "audio/words/she.mp3"
+    },
+    {
+      "en": "it",
+      "ru": "оно",
+      "enAudio": "audio/words/it.mp3"
+    },
+    {
+      "en": "we",
+      "ru": "мы",
+      "enAudio": "audio/words/we.mp3"
+    },
+    {
+      "en": "they",
+      "ru": "они",
+      "enAudio": "audio/words/they.mp3"
+    },
+    {
+      "en": "me",
+      "ru": "меня",
+      "enAudio": "audio/words/me.mp3"
+    },
+    {
+      "en": "him",
+      "ru": "его",
+      "enAudio": "audio/words/him.mp3"
+    },
+    {
+      "en": "her",
+      "ru": "её",
+      "enAudio": "audio/words/her.mp3"
+    },
+    {
+      "en": "us",
+      "ru": "нас",
+      "enAudio": "audio/words/us.mp3"
+    },
+    {
+      "en": "them",
+      "ru": "их",
+      "enAudio": "audio/words/them.mp3"
+    },
+    {
+      "en": "my",
+      "ru": "мой/моя/моё",
+      "enAudio": "audio/words/my.mp3"
+    },
+    {
+      "en": "your",
+      "ru": "твой/ваш",
+      "enAudio": "audio/words/your.mp3"
+    },
+    {
+      "en": "his",
+      "ru": "его",
+      "enAudio": "audio/words/his.mp3"
+    },
+    {
+      "en": "its",
+      "ru": "его/её (для предметов)",
+      "enAudio": "audio/words/its.mp3"
+    },
+    {
+      "en": "our",
+      "ru": "наш",
+      "enAudio": "audio/words/our.mp3"
+    },
+    {
+      "en": "their",
+      "ru": "их",
+      "enAudio": "audio/words/their.mp3"
+    }
+  ]
+}

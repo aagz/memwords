@@ -255,6 +255,41 @@
       "en": "sunday",
       "ru": "воскресенье",
       "enAudio": "audio/words/sunday.mp3"
+    },
+    {
+      "en": "I",
+      "ru": "я",
+      "enAudio": "audio/words/I.mp3"
+    },
+    {
+      "en": "you",
+      "ru": "ты/вы",
+      "enAudio": "audio/words/you.mp3"
+    },
+    {
+      "en": "he",
+      "ru": "он",
+      "enAudio": "audio/words/he.mp3"
+    },
+    {
+      "en": "she",
+      "ru": "она",
+      "enAudio": "audio/words/she.mp3"
+    },
+    {
+      "en": "it",
+      "ru": "оно",
+      "enAudio": "audio/words/it.mp3"
+    },
+    {
+      "en": "we",
+      "ru": "мы",
+      "enAudio": "audio/words/we.mp3"
+    },
+    {
+      "en": "they",
+      "ru": "они",
+      "enAudio": "audio/words/they.mp3"
     }
   ]
 }
