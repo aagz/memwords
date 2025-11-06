@@ -4,6 +4,7 @@
 
 let headImages = [];
 let humanImages = [];
+let audioFiles = [];
 
 // Global variables
 let wordsData = [];
@@ -24,6 +25,7 @@ async function loadAssets() {
     const data = await response.json();
     headImages = data.headImages;
     humanImages = data.humanImages;
+    audioFiles = data.audioFiles || [];
     return data.wordLists;
   } catch (error) {
     console.error('Error loading assets:', error);
